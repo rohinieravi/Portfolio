@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background-color: black;
+  color:white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  text-align: right;
+}
+
+footer {
+  font-size: 12px;
+}
+
+nav div{
+  display:inline-block;
+}
+
+.name{
+  float:left;
+}
+
+nav h4 {
+  margin:0;
+  padding: 0 20px;
+  display: inline-block;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+}
+
+
+header {
+  margin-top: 30px;
+  padding: 28% 0;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('images/seattleme2.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: white;
+  height:300px;
+}
+
+header h1,h2{
+  margin: 0;
+  text-align: right;
+  color:white;
+  padding-right: 100px;
+}
+
+p {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  min-height: 200px;
+  padding: 4% 0;
+  background-color: grey;
+}
+
+section:nth-child(even) {
+  background-color: white;
+}
+
+#projects > div {
+  border:1px solid black;
+  border-radius: 5px;
+  margin:20px;
+  padding-bottom: 20px;
+  background-color: lightgrey;
+}
+
+#email a {
+  color:blue;
+}
+
+#socialmedia i {
+  padding: 0 2px;
+}
+
+img {
+  max-height: 300px;
+  max-width: 100%;
+}
