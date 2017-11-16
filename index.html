@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
@@ -11,31 +11,38 @@
 <body>
 	<nav role="navigation">
 		<div class="name">
-			<h4><a href=#>RR</a></h4>
+			<h4><a href="#hero">RR</a></h4>
 		</div>
-		
-			<div><a href="#about">About</a></div>
-			<div><a href="#projects">Projects</a></div>
-			<div><a href="#contact">Contact</a></div>
-		
+		<a href="#" class="icon">&#9776;</a>
+		<div class="topnav">
+			<a href="#about">About</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+
+		</div>
 	</nav>
     <main role="main">
-        <header role="banner">
+        <header role="banner" id="hero">
+        	<div class="foo">
             <h1>Hi, I am Rohini</h1>
             <h2>Web Developer from Seattle, WA</h2>
+        </div>
         </header>
 
         <section id="about">
+        	<div class="foo">
             <h3>About me</h3>
            	<p>I am a full stack web developer and a recent graduate from the Web Development Bootcamp Program at Thinkful. I like to innovate and build stuff that makes life easy and organized. I enjoy coding and fixing issues as I find it as interesting as solving a puzzle. The fact that I get to see what I build is what I love about being a web developer.</p>
 			<p>Besides coding, I like being creative and I am always into learning new things. Some of my ventures include painting, crochet and DIY. I also love travel and photography.</p>
+		</div>
         </section>
 
         <section id="projects" class="halfcircle">
+        	<div class="foo">
             <h3>My Projects</h3>
             <div class="row">
             <div class="col-4">
-	            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	            <div class="flip-container" >
 					<div class="flipper">
 						<div class="front">
 	            			<div class="project1">
@@ -59,7 +66,7 @@
 	        	</div>
         	</div>
         	<div class="col-4">
-	            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	            <div class="flip-container">
 					<div class="flipper">
 						<div class="front">
 	            			<div class="project2">
@@ -82,7 +89,7 @@
 			    </div>
 			</div>
 			<div class="col-4">
-	            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	            <div class="flip-container" >
 					<div class="flipper">
 						<div class="front">
 	            			<div class="project3">
@@ -105,13 +112,18 @@
 	            </div>
 	        </div>
 	    </div>
+	</div>
             
         </section>
 
         <section id="contact">
+        	<div class="foo">
             <p>I am currently available for new opportunities. So feel free to reach out to me at:</p>
-            <div id="email"><a href="mailto:rohinieravi@gmail.com">rohinieravi@gmail.com</a></div>            
+            <div id="email"><a href="mailto:rohinieravi@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>rohinieravi@gmail.com</a></div>    
+            </div>  
+            <a href="#hero"><i class="fa fa-angle-double-up fa-lg" aria-hidden="true"></i></a>
         </section>
+
     </main>
     <footer role="content-info">
     	<div id="socialmedia">
@@ -122,5 +134,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://use.fontawesome.com/728e6d1449.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
