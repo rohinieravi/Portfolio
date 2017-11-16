@@ -31,11 +31,6 @@ footer {
   font-size: 12px;
 }
 
-nav div{
-  //margin:0;
-  //padding: 0 20px;
-  //display:inline-block;
-}
 
 .name{
   float:left;
@@ -43,6 +38,7 @@ nav div{
 
 #projects h4 {
   color: white;
+  font-size: 20px;
 }
 
 
@@ -90,10 +86,29 @@ header .foo {
 
 }
 
-h3{
-  font-size: 1em;
- //margin-bottom: 20px;
+h3 {
+  font-size: 26px;
+  font-weight: bold;
   font-family: 'Quattrocento', serif;
+}
+
+.links {
+  font-size: 20px;
+}
+
+.links span {
+  margin: 0 5px;
+}
+.links a {
+  background-color: #2C3E50;
+  padding: 5px;
+  border-radius: 5px;
+   box-shadow: 2px 2px 2px #888888;
+}
+
+.links a:hover {
+     box-shadow:4px 4px 4px #888888;
+
 }
 
  #contact p, #about p {
@@ -205,7 +220,6 @@ img {
 .flip-container, .front, .back  {
     height: 400px;
     margin-bottom: 20px;
-    
 }
 
 /* flip speed goes here */
