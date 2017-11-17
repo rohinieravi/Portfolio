@@ -164,11 +164,7 @@ background: #78c1c1;
 }
 
 #projects  .flipper {
-  border:1px solid black;
-  border-radius: 5px;
-  background: linear-gradient(to bottom, #2C3E50 , #be6463); 
-    height: 400px;
-    color: white;
+  
 }
 
 #email a {
@@ -211,11 +207,25 @@ img {
 /* entire container, keeps perspective */
 .flip-container {
   -webkit-perspective: 1000px;
+  -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
 }
   /* flip the pane when hovered */
-  .flip-container:hover .flipper, .flip-container.hover .flipper {
+  .flip-container:hover .back, .flip-container.hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip-container:hover .front, .flip-container.hover .front {
     -webkit-transform: rotateY(180deg);
-  }
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
 
   
 .flip-container, .front, .back  {
@@ -225,8 +235,8 @@ img {
 
 /* flip speed goes here */
 .flipper {
-  -webkit-transition: 0.6s;
-  -webkit-transform-style: preserve-3d;
+  -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
 
   position: relative;
 }
@@ -234,6 +244,24 @@ img {
 /* hide back of pane during swap */
 .front, .back {
   -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
 
   position: absolute;
   left: 0;
@@ -249,12 +277,22 @@ img {
 .front {
   z-index: 2;
   /* for firefox 31 */
-  -webkit-transform: rotateY(0deg);
+  //-webkit-transform: rotateY(0deg);
+
+  border:1px solid black;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #2C3E50 , #be6463); 
+    //height: 400px;
+    color: white;
 }
 
 /* back, initially hidden pane */
 .back {
-  -webkit-transform: rotateY(180deg);
+  -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
   background-color: black;
   border:1px solid black;
   border-radius: 5px;
