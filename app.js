@@ -1,6 +1,6 @@
 $(function() {
 	window.sr = ScrollReveal({ reset: true });;
-	sr.reveal('.foo', { duration: 800 })
+	sr.reveal('.foo', { duration: 500 })
 });
 
 $("a").on('click', function(event) {

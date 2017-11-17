@@ -13,7 +13,7 @@ font-family: 'Quattrocento Sans', sans-serif;
 
 nav,
 footer {
-  padding: 1% 0;
+  padding: 10px 0;
   background-color: black;
   color:white;
 }
@@ -210,13 +210,14 @@ img {
 
 /* entire container, keeps perspective */
 .flip-container {
-  perspective: 1000px;
+  -webkit-perspective: 1000px;
 }
   /* flip the pane when hovered */
   .flip-container:hover .flipper, .flip-container.hover .flipper {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
   }
 
+  
 .flip-container, .front, .back  {
     height: 400px;
     margin-bottom: 20px;
@@ -224,15 +225,15 @@ img {
 
 /* flip speed goes here */
 .flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d;
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
 
   position: relative;
 }
 
 /* hide back of pane during swap */
 .front, .back {
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 
   position: absolute;
   left: 0;
@@ -248,12 +249,12 @@ img {
 .front {
   z-index: 2;
   /* for firefox 31 */
-  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
 }
 
 /* back, initially hidden pane */
 .back {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   background-color: black;
   border:1px solid black;
   border-radius: 5px;
@@ -286,12 +287,12 @@ a.icon {
   .topnav.responsive {position: relative; float:none;}
   a.icon {
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 10px;
+    top: 10px;
   }
 
   .topnav.responsive a:first-child{
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .topnav.responsive a {
