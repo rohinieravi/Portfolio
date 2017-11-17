@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<title>Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="float-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/float-grid.css">
 	<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,126 +18,147 @@
 			<a href="#about">About</a>
 			<a href="#projects">Projects</a>
 			<a href="#contact">Contact</a>
-
 		</div>
 	</nav>
     <main role="main">
         <header role="banner" id="hero">
-        	<div class="foo">
-            <h1>Hi, I am Rohini</h1>
-            <h2>Web Developer from Seattle, WA</h2>
-        </div>
-        <a href="#about"><i class="fa fa-angle-double-down fa-lg" aria-hidden="true"></i></a>
+        	<!-- added scroll reveal animation-->
+        	<div class="animation">
+	            <h1>Hi, I am Rohini</h1>
+	            <h2>Web Developer from Seattle, WA</h2>
+        	</div>
+        	<!-- Scroll down button -->
+        	<a href="#about">
+        		<i class="fa fa-angle-double-down fa-lg" aria-hidden="true"></i>
+        	</a>
         </header>
-
+        <!-- About Section-->
         <section id="about">
-        	<div class="foo">
-            <h3>About me</h3>
-           	<p>I am a full stack web developer and a recent graduate from the Web Development Bootcamp Program at Thinkful. I like to innovate and build stuff that makes life easy and organized. I enjoy coding and fixing issues as I find it as interesting as solving a puzzle. The fact that I get to see what I build is what I love about being a web developer.</p>
-           	<br>
-			<p>Besides coding, I like being creative and I am always into learning new things. Some of my ventures include painting, crochet and DIY. I also love travel and photography.</p>
-		</div>
+        	<!-- added scroll reveal animation-->
+        	<div class="animation">
+	            <h3>About me</h3>
+	           	<p>I am a full stack web developer and a recent graduate from the Web Development Bootcamp Program at Thinkful. I like to innovate and build stuff that makes life easy and organized. I enjoy coding and fixing issues as I find it as interesting as solving a puzzle. The fact that I get to see what I build is what I love about being a web developer.</p>
+	           	<br>
+				<p>Besides coding, I like being creative and I am always into learning new things. Some of my ventures include painting, crochet and DIY. I also love travel and photography.</p>
+			</div>
         </section>
-
+        <!--My projects section-->
         <section id="projects" class="halfcircle">
-        	<div class="foo">
-            <h3>My Projects</h3>
-        </div>
+        	<!-- added scroll reveal animation-->
+        	<div class="animation">
+            	<h3>My Projects</h3>
+        	</div>
             <div class="row">
-            <div class="col-4">
-	            <div class="flip-container" >
-					<div class="flipper">
-						<div class="front">
-	            			<div class="project1">
+            	<!-- Project 1 -->
+	            <div class="col-4">
+		            <div class="flip-container">
+						<div class="flipper">
+							<!-- Card front -->
+							<div class="front">
 	            				<h4>Stock Tracker</h4>
 	            				<div>
 	            					<img src="images/stockTracker.png" alt="Stock Tracker">
 	            				</div>
 	            				<div>Skills: HTML, CSS, React, Redux, Node.js, Express, Mongoose/MLAB, Mocha, Chai, Enzyme</div>
-	            	
-	            			</div>
-	            		</div>
-	            		<div class="back">
-	            			<p>The Stock Tracker is an app intended to help you track and manage all your stocks from a single place and thus make a wise decision of what to sell or buy. It helps you to flourish in the ever-changing stock market by providing insight into the current market value of all your assets and their recent market fluctuations.</p>
-	            			<div class="links">
-	            				<a href="https://github.com/rohinieravi/stock-tracker-client" target="_blank" rel="noopener noreferrer"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-	            				<span>|</span>
-	            				<a href="https://stock-tracker.netlify.com/"target="_blank" rel="noopener noreferrer">Demo</a>
-	            			</div>
-	            		</div>
-	            	</div>
+		            		</div>
+		            		<!-- Card Back-->
+		            		<div class="back">
+		            			<p>The Stock Tracker is an app intended to help you track and manage all your stocks from a single place and thus make a wise decision of what to sell or buy. It helps you to flourish in the ever-changing stock market by providing insight into the current market value of all your assets and their recent market fluctuations.</p>
+		            			<div class="links">
+		            				<a href="https://github.com/rohinieravi/stock-tracker-client" target="_blank" rel="noopener noreferrer">
+		            					<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+		            				</a>
+		            				<span>|</span>
+		            				<a href="https://stock-tracker.netlify.com/"target="_blank" rel="noopener noreferrer">Demo</a>
+		            			</div>
+		            		</div>
+		            	</div>
+		        	</div>
 	        	</div>
-        	</div>
-        	<div class="col-4">
-	            <div class="flip-container">
-					<div class="flipper">
-						<div class="front">
-	            			<div class="project2">
+	        	<!-- Project 2 -->
+	        	<div class="col-4">
+		            <div class="flip-container">
+						<div class="flipper">
+							<!-- Card front -->
+							<div class="front">
 		            			<h4>Itinerary Saver</h4>
 		            			<div>
 		            				<img src="images/itinerarySaver.png" alt="Itinerary Saver">
 		            			</div>
 		            			<div>Skills: HTML, CSS, JavaScript, jQuery, Node.js, Express, Mocha, Chai, Mongoose/MLAB</div>
-		            		</div>
-		            	</div>
-		            	<div class="back">	
-	            			<p>The Itinerary Saver is an app that helps to organize and save travel itineraries. Whether it be to look up a previous trip itinerary or to plan a trip in the future, this app helps to store the details of your trips for later reference. It also allows to share itineraries with others and also, view itineraries shared by others.</p>
-			            	<div class="links">
-			            		<a href="https://github.com/rohinieravi/Itinerary-Saver" target="_blank" rel="noopener noreferrer"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-			            		<span>|</span>
-			            		<a href="https://fast-savannah-13472.herokuapp.com/"target="_blank" rel="noopener noreferrer">Demo</a>
 			            	</div>
-			            </div>
-			        </div>
-			    </div>
-			</div>
-			<div class="col-4">
-	            <div class="flip-container" >
-					<div class="flipper">
-						<div class="front">
-	            			<div class="project3">
+			            	<!-- Card back -->
+			            	<div class="back">	
+		            			<p>The Itinerary Saver is an app that helps to organize and save travel itineraries. Whether it be to look up a previous trip itinerary or to plan a trip in the future, this app helps to store the details of your trips for later reference. It also allows to share itineraries with others and also, view itineraries shared by others.</p>
+				            	<div class="links">
+				            		<a href="https://github.com/rohinieravi/Itinerary-Saver" target="_blank" rel="noopener noreferrer">
+				            			<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+				            		</a>
+				            		<span>|</span>
+				            		<a href="https://fast-savannah-13472.herokuapp.com/"target="_blank" rel="noopener noreferrer">Demo</a>
+				            	</div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+				<!-- Project 3 -->
+				<div class="col-4">
+		            <div class="flip-container" >
+						<div class="flipper">
+							<!-- Card front -->
+							<div class="front">
 	            				<h4>Trailer Search</h4>
 	            				<div>
 	            					<img src="images/trailerDb.png" alt="Trailer DB">
 	            				</div>
-	            				<div>Skills: HTML, CSS JavaScript, JQuery</div>
-	            			</div>
-	            		</div>
-	            		<div class="back">
-	            			<p>The Trailer Search app provides a sneak peek into movies and TV series or shows, whether it be yet-to-release upcoming ones or long lost old ones by allowing you to look up their trailers. The app also allows you to search movies or TV shows based on the actor you are looking for and help discover more movies or shows from a particular actor that you liked.</p>
-	            			<div class="links">
-	            				<a href="https://github.com/rohinieravi/Trailer-Search" target="_blank" rel="noopener noreferrer"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-	            				<span>|</span>
-	            				<a href="https://rohinieravi.github.io/Trailer-Search/"target="_blank" rel="noopener noreferrer">Demo</a>
-	            			</div>
-	            		</div>
-	            	</div>
-	            </div>
-	        </div>
-	    
-	</div>
-            
+	            				<div>Skills: HTML, CSS JavaScript, JQuery</div>	
+		            		</div>
+		            		<!-- Card back -->
+		            		<div class="back">
+		            			<p>The Trailer Search app provides a sneak peek into movies and TV series or shows, whether it be yet-to-release upcoming ones or long lost old ones by allowing you to look up their trailers. The app also allows you to search movies or TV shows based on the actor you are looking for and help discover more movies or shows from a particular actor that you liked.</p>
+		            			<div class="links">
+		            				<a href="https://github.com/rohinieravi/Trailer-Search" target="_blank" rel="noopener noreferrer">
+		            					<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+		            				</a>
+		            				<span>|</span>
+		            				<a href="https://rohinieravi.github.io/Trailer-Search/"target="_blank" rel="noopener noreferrer">Demo</a>
+		            			</div>
+		            		</div>
+		            	</div>
+		            </div>
+		        </div>    
+			</div>           
         </section>
-
+        <!-- Contact section -->
         <section id="contact">
-        	<div class="foo">
-            <p>I am currently available for new opportunities. So feel free to reach out to me at:</p>
-            <div id="email"><a href="mailto:rohinieravi@gmail.com"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>rohinieravi@gmail.com</a></div>    
+        	<!-- added scroll reveal animation-->
+        	<div class="animation">
+            	<p>I am currently available for new opportunities. So feel free to reach out to me at:</p>
+            	<div id="email">
+            		<a href="mailto:rohinieravi@gmail.com">
+            			<i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>rohinieravi@gmail.com
+            		</a>
+            	</div>    
             </div>  
-            <a href="#hero"><i class="fa fa-angle-double-up fa-lg" aria-hidden="true"></i></a>
+            <a href="#hero">
+            	<i class="fa fa-angle-double-up fa-lg" aria-hidden="true"></i>
+            </a>
         </section>
-
     </main>
     <footer role="content-info">
     	<div id="socialmedia">
     		Connect with me:
-	    	<a href="https://www.linkedin.com/in/rohini-ravindranathan"target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
-	    	<a href="https://github.com/rohinieravi" target="_blank" rel="noopener noreferrer"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+	    	<a href="https://www.linkedin.com/in/rohini-ravindranathan"target="_blank" rel="noopener noreferrer">
+	    		<i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+	    	</a>
+	    	<a href="https://github.com/rohinieravi" target="_blank" rel="noopener noreferrer">
+	    		<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+	    	</a>
     	</div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://use.fontawesome.com/728e6d1449.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

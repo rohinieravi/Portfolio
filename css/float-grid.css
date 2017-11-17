@@ -67,7 +67,6 @@
     width: 33.33%;
   }
 
-
   /* 6 columns */
   .col-6 {
     width: 50%;
@@ -82,17 +81,15 @@
   } 
 }
 
-
-
 @media only screen and (min-width: 700px) {
   
   #about{
-  padding-bottom: 8%;
-}
+    padding-bottom: 8%;
+  }
 
-#contact {
-  padding-top: 8%;
-}
+  #contact {
+    padding-top: 8%;
+  }
 
   .back {
     font-size: 16px;
@@ -104,27 +101,29 @@
   }
 
   header h2{
-        font-size: 1.5em;
+    font-size: 1.5em;
   }
+
   body {
     font-size: 20px;
   }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+  /* Style the links inside the navigation bar */
+  .topnav a {
     float: left;
     display: block;
     text-align: center;
     padding: 0 40px;
     text-decoration: none;
-}
+  }
 
-.topnav {
-  float:right;
-}
-/* Hide the link that should open and close the topnav on small screens */
-a.icon {
+  .topnav {
+    float:right;
+  }
+
+  /* Hide the link that should open and close the topnav on small screens */
+  a.icon {
     display: none;
-}
+  }
 
 }
